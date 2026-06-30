@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Maryam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-mask"></div>
+    <div class="ambient-glow"></div>
+
+    <div class="fireflies"></div>
+    <div class="stars-layer"></div>
+    <div class="particle-layer"></div>
+
+    <div class="audio-control">
+      <button id="musicToggle" aria-label="Toggle music" class="glass-button">
+        ▶︎ Play
+      </button>
+    </div>
+
+    <div class="loading-screen active" id="loadingScreen">
+      <div class="glass-card loading-card">
+        <p class="loading-text">Preparing a surprise...</p>
+        <div class="loading-ring"></div>
+      </div>
+    </div>
+
+    <main class="stage" id="stage">
+      <section class="scene welcome active" id="sceneWelcome">
+        <div class="glass-card hero-card">
+          <div class="hero-copy">
+            <h1>Hello Maryam <span>🤍</span></h1>
+            <p>Today isn't just another day...<br />It's your special day.</p>
+          </div>
+          <button id="openSurprise" class="primary-button">Open Your Surprise</button>
+        </div>
+      </section>
+
+      <section class="scene scene-layer" id="scene1">
+        <div class="glass-card scene-card">
+          <div class="scene-text" id="scene1Text"></div>
+        </div>
+      </section>
+
+      <section class="scene scene-layer" id="scene2">
+        <div class="glass-card scene-card scene-card--center">
+          <div class="scene-words" id="scene2Words"></div>
+          <div class="heart-cloud" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="scene scene-layer" id="scene3">
+        <div class="glass-card scene-card scene-card--wide">
+          <div class="cake-scene">
+            <div class="cake-base"></div>
+            <div class="cake-layer cake-layer--top"></div>
+            <div class="cake-layer cake-layer--middle"></div>
+            <div class="cake-layer cake-layer--bottom"></div>
+            <div class="candles">
+              <div class="candle" data-candle="1"><span class="flame"></span></div>
+              <div class="candle" data-candle="2"><span class="flame"></span></div>
+              <div class="candle" data-candle="3"><span class="flame"></span></div>
+            </div>
+            <div class="sparkles"></div>
+          </div>
+          <div class="scene-caption">Make a wish, Maryam.</div>
+        </div>
+        <div class="confetti-layer" id="confettiLayer"></div>
+      </section>
+
+      <section class="scene scene-layer" id="scene4">
+        <div class="glass-card scene-card scene-card--center">
+          <p class="quote">Life becomes brighter<br />when kind people exist.</p>
+          <p class="quote-signature">Thank you<br />for being one of them.</p>
+        </div>
+      </section>
+
+      <section class="scene scene-layer" id="scene5">
+        <div class="glass-card scene-card scene-card--center">
+          <ul class="timeline-list" id="timelineList"></ul>
+        </div>
+      </section>
+
+      <section class="scene scene-layer" id="scene6">
+        <div class="glass-card letter-card">
+          <h2>Happy Birthday Maryam <span>🎂🤍</span></h2>
+          <div class="letter-text">
+            <p>I hope this year brings you<br />peace,<br />good health,<br />beautiful opportunities,<br />and endless reasons to smile.</p>
+            <p>May every dream you carry<br />find its way into reality.</p>
+            <p>Never stop believing in yourself.</p>
+            <p>May Allah always protect you,<br />guide you,<br />and bless your life with happiness.</p>
+            <p>Keep smiling.<br />Keep shining.<br />Happy Birthday once again.</p>
+          </div>
+          <p class="signature">— From zahid 🤍</p>
+        </div>
+      </section>
+
+      <section class="scene scene-layer" id="scene7">
+        <div class="glass-card scene-card scene-card--center">
+          <p class="final-text" id="finalText">✨ The End ✨</p>
+          <div class="final-stars" aria-hidden="true"></div>
+        </div>
+      </section>
+    </main>
+
+    <audio id="birthdayAudio" loop preload="auto" src="assets/music.mp3"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
